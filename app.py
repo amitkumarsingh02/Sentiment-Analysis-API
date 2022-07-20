@@ -4,6 +4,7 @@ from fastapi import FastAPI, Path
 from app_config import app_config
 from keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from fastapi.responses import RedirectResponse
 
 app = FastAPI()
 model = load_model(app_config.model_path)
@@ -13,7 +14,7 @@ class HomeAPI:
 
     @app.get("/")
     def home():
-        return {"Home":"Sentiment Analysis API"}
+        return RedirectResponse(url=f"/docs", status_code=200)
 
     @app.get("/check/{text}")
     def check_sentiment( text:str = Path(None, description="Need text to pedict Sentiment")):
