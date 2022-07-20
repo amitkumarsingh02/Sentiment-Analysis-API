@@ -14,7 +14,7 @@ class HomeAPI:
 
     @app.get("/")
     def home():
-        return RedirectResponse(url=f"/docs", status_code=200)
+        return "Welcome to Sentiment Analysis API"
 
     @app.get("/check/{text}")
     def check_sentiment( text:str = Path(None, description="Need text to pedict Sentiment")):
