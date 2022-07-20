@@ -1,9 +1,6 @@
 fastapi
 uvicorn
-scikit-learn
-matplotlib
-pandas
 gunicorn
+pandas
 numpy
-tensorflow
-keras
+tensorflow-cpu
