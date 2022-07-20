@@ -1,4 +1,4 @@
-Sentiment Analysis API
+# Sentiment Analysis API
 
 Preprocessing and cleaning
 
@@ -12,22 +12,26 @@ Model tried:
 2.	RandomForestClassifier
 3.	BiLSTM (bidirectional LSTM)
 
-Logistic Regression
+## Logistic Regression
 
 testing accuracy: 0.91
+
 Performed hyper tuning of parameters using GridSearchCV. Tried parameters like 'penalty', learning rate, and 'solver' etc. 
 
-RandomForestClassifier
+## RandomForestClassifier
 
 testing accuracy: 0.90
+
 Performed hyper tuning of parameters using GridSearchCV. Tried parameters like 'bootstrap', 'max_depth', 'max_features', 'min_samples_leaf', 'min_samples_split', 'n_estimators' etc.
 
-BiLSTM (bidirectional LSTM)
+## BiLSTM (bidirectional LSTM)
 
 -	training accuracy: 0.98
 -	validation accuracy: 0.91
 -	testing accuracy: 0.89
+
 Performed hyper tuning of parameters. Tried parameters like different neural levels, hidden unit levels, learning rate, activation function, optimizers, dropout, regularizers, batch normalization, etc. 
+
 Deployed this model on Heroku.
 
 All the tries tested models and methods are committed to file Sentiment-Analysis.ipynb in git repository with all metric and chart.
