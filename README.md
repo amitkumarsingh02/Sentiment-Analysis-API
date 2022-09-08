@@ -41,8 +41,3 @@ To run on local server. Start uvicon server using run app.py file
 http://127.0.0.1:9050/check/{text}
 
 FAST API Sawagger Doc - http://127.0.0.1:9050/docs
-
-Deployed on Heroku - 
-https://test-sentiment-check.herokuapp.com/docs
-
-https://test-sentiment-check.herokuapp.com/check/{text}
